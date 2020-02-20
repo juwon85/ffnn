@@ -1,0 +1,132 @@
+.dackbg{background: black;}
+.body1{ height: 150%;
+    margin: 0px; border: 0px;
+     background: #ccc; font-size: 13px; }   
+.footer1 {padding-bottom:1px; margin:0px; text-align: center; background: #111; color:#D4E6F4;}
+.footer2 { background-color: black; color:#D4E6F4;}
+    a{
+        text-decoration: none;
+    }
+    
+ .opa{opacity: .8;
+ background-color: black;
+ color:#D4E6F4;
+ }   
+
+#animate {
+    position: relative;
+    border: 1px solid green;
+    background: yellow;
+    width: 100px;
+    height: 100px;
+}
+ ul li:hover {}  
+ ul li{list-style-type:none; display:inline-block; margin:5px}
+.ps { background: #D4E6F4;}
+
+
+p.sss {
+    font-family :interit;
+    font-size: 100%;
+    font-weight: interit;
+    font-style: interit;
+   } 
+p.ap {
+  font: 15px arial, sans-serif; 
+}
+
+p.bp {
+  font: italic bold 12px/30px Georgia, serif;
+}  
+
+.cp{
+  font-style: oblique;
+ font-family :interit;
+   font-size: 18px;
+   font-weight: bold;
+list-style: none;   
+}
+table, tr, th { border-collapse: collapse; vertical-align: top; font-size: 13px;
+    line-height: 15px; padding: 0px }
+ 
+ .backimage{
+     position: absolute;
+     top: 0;
+    
+     width : 100%;
+     height: 60%;
+      background-size: cover;
+      animation: animate 30s ease-in-out infinite;    
+  }
+  
+   @keyframes animate{
+         0%, 100%{background-image: url(image1.jpe);} 
+      
+           25%{background-image: url(livingroom2.jpg);} 
+      
+           50%{background-image: url(image6.jpe);}
+      
+           75%{background-image: url(image7.jpe);}
+  }
+
+table {
+border-collapse: collapse;
+width: 100%;
+color: #588c7e;
+font-family: monospace;
+font-size: 25px;
+text-align: left;
+}
+th {
+background-color: #588c7e;
+color: white;
+}
+tr:nth-child(even) {background-color: #f2f2f2}
+
+*{box-sizing: border-box;}
+
+*:before,
+*:after{box-sizing: border-box;}
+
+html,body{
+  height: 100%;
+  position: relative;
+}
+
+.main-container{min-height: 100vh;
+    overflow:hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+footer{position: absolute;
+bottom:0;
+width: 100%;
+background-color: #f2f2f2;
+}
+
+#table-wrapper {
+  position:relative;
+}
+#table-scroll {
+  height:300px;
+  overflow:auto;  
+  margin-top:20px;
+}
+#table-wrapper table {
+  width:100%;
+
+}
+#table-wrapper table * {
+ 
+  color:black;
+}
+#table-wrapper table thead th .text {
+  position:absolute;   
+  top:-20px;
+  z-index:2;
+  height:70%;
+  width:100%;
+  border:1px solid green;
+}

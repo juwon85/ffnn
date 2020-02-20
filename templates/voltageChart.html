@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Graph of voltage{% endblock %}
+
+ {% block body %}
+
+ <div id="container" style="width: 75%;">
+    <canvas id="voltageChart"></canvas>
+  </div>
+
+ <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script>
+
+    var config = {
+      type: 'line',
+      data: {
+        datasets: [{
+          data: {{ data|safe }},
+          backgroundColor: 'blue',
+          label: 'voltage'
+        }],
+        labels: {{ labels|safe }}
+      },
+      options: {
+        responsive: true
+      }
+    };
+
+    window.onload = function() {
+      var ctx = document.getElementById('voltageChart').getContext('2d');
+      window.myline = new Chart(ctx, config);
+    };
+
+  </script>
+
+ {% endblock  %}
